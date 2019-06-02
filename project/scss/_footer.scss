@@ -1,0 +1,86 @@
+.footer {
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #31343de8;
+    /*style footer content*/
+    .footer-content {
+      margin-top: 90px;
+      color: white;
+      @media (max-width: 530px) {
+        margin-top: 20px;
+      }
+      img {
+        margin-bottom: 50px;
+        @media (max-width: 530px) {
+            margin-bottom: 30px;
+          }
+        
+      }
+      p {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      span {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+      form {
+        margin-top: 30px;
+        input {
+          background: none;
+          border: 1px solid white;
+          border-radius: 14px;
+          padding: 3px 10px;
+          @media (max-width: 530px) {
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+          }
+          &:focus {
+            background: white;
+            &::placeholder {
+              color: black;
+            }
+          }
+          &::placeholder {
+            color: white;
+          }
+        }
+        button {
+          padding: 3px 23px;
+          border-radius: 15px;
+          border: none;
+          background-color: white;
+          color: $main-color;
+          font-weight: bolder;
+          cursor: pointer;
+          &:hover {
+            background-color: $second-color;
+            color: white;
+          }
+          @media (max-width: 530px) {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      a {
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 50px;
+      }
+    }
+  }
+}

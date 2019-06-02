@@ -1,0 +1,35 @@
+.section-3 {
+  margin-top: 110px;
+  h4 {
+    margin-bottom: 50px;
+  }
+  .carousel-inner {
+    width: 60%;
+    margin: auto;
+    .d-block {
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    p {
+      line-height: 1.8;
+      color: #999999;
+    }
+  }
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .crousal-icons {
+    margin-top: 30px;
+    display: inline-block;
+    border: 1px solid #999999;
+    padding: 4px 8px;
+    border-radius: 16px;
+    color: #999999;
+    margin-left: 10px;
+    &:hover {
+      color: blue;
+    }
+  }
+}
